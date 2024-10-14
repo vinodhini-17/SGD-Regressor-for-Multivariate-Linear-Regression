@@ -47,9 +47,9 @@ X.info()
 ````
 Y=df[['AveOccup','target']]
 Y.info()
-`````
+
 ![image](https://github.com/user-attachments/assets/e03d08a7-6e3a-48a7-84f4-1d146692dca2)
-```````
+
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
 scaler_X = StandardScaler()
 scaler_Y = StandardScaler()
