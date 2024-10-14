@@ -13,13 +13,13 @@ To write a program to predict the price of the house and number of occupants in 
 3.Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
 4.Predict on test data, inverse transform the results, and calculate the mean squared error.
 ## Program:
-```
+
 /*
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
 Developed by: vinodhini k
 RegisterNumber:  212223230245
 */
-```
+
 import numpy as np
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
@@ -33,7 +33,7 @@ data=fetch_california_housing()
 df=pd.DataFrame(data.data,columns=data.feature_names)
 df['target']=data.target
 print(df.head())
-```
+
 ![image](https://github.com/user-attachments/assets/4641f46e-737d-40b4-811a-03cfc3187fd9)
 ``
 df.info()
